@@ -153,6 +153,6 @@ mail:
 ```
 
 ## Contact
-If you have any questions or need further assistance, please feel free to contact me at [your-email@example.com].
+If you have any questions or need further assistance, please feel free to contact me at [ayoub.inf30@gmail.com].
 
 Thank you for using My Portfolio and Blog Application Backend!
