@@ -1,0 +1,52 @@
+spring:
+  application:
+    name: "sbbackend"
+  servlet:
+    multipart:
+      max-file-size: 15MB
+      max-request-size: 15MB
+  datasource:
+    url: jdbc:postgresql://server_url/database_name?user=aaaaaaaaa&password=aaaaaaaaa&sslmode=require
+    username: aaaaaaaaa
+    password: aaaaaaaaa
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update #create-drop #create-drop
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: true
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: "aaaaaaaaaaa@aaaaaaa.com"
+    password: "aaaaaaaaaaaaaaaaaaa"
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+          connectiontimeout: 5000
+          timeout: 5000
+          writetimeout: 5000
+file:
+  upload-dir: "uploads"
+
+application:
+  frontend-url: http://localhost:3000
+  backend-url: http://localhost:8080
+  admin:
+    firstname:  aaaaaaa
+    lastname: aaaaaaaaa
+    email:  aaaaaaaaaaa@aaaaaaaa.com
+    password: aaaaaaaaaa
+  security:
+    jwt:
+      secret-key: 404E635266556A586E3272357538782F413F4428472B4B6250645367566B5970
+      expiration: 86400000 # a day
+

@@ -1,0 +1,17 @@
+package com.example.sbbackend.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.util.Date;
+
+@Data
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+public class ReactionsRequestDto {
+    private ReactionsType type;  // e.g., "like", "love", "haha", "wow", etc.
+
+}
